@@ -1,0 +1,73 @@
+task 1:  Array Manipulation
+
+unique elements from array
+
+function uniq(a){
+  
+  var count=0
+  var start=false
+  var s=[]
+  
+  for (var j = 0; j < a.length; j++) {
+    for (var k = 0; k < s.length; k++) {
+        if (a[j] == s[k]) {
+            start = true;
+        }
+    }
+    count++;
+    if (count == 1 && start == false) {
+        s.push(a[j]);
+    }
+    start = false;
+    count = 0;
+}
+  return s
+}
+
+
+
+task 2: Object Oprations
+
+
+
+function merge(obj1,obj2){
+ 
+ let a=[];
+ a.push(obj1);
+ a.push(obj2)
+ 
+ let obj3={...a}
+ 
+  return obj3
+
+     }
+
+
+
+
+
+
+task 3:Logical oprations
+
+ common elements from array:
+
+function findCommonElement(array1, array2) {
+   
+      var a=[] 
+    for (let i = 0; i < array1.length; i++) {
+ 
+       
+        for (let j = 0; j < array2.length; j++) {
+ 
+          
+            if (array1[i] == array2[j]) {
+ 
+               a.push(array1[i]);
+                
+            }
+        
+    }
+    }
+    
+    return a;
+}
