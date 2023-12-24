@@ -52,3 +52,5 @@ router.use((req, res, next) => {
 router.listen(PORT,()=>{
     console.log("server running on ",PORT);
 })
+
+export default router;

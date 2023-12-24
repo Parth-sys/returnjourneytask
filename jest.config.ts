@@ -4,8 +4,12 @@
  */
 
 import type {Config} from 'jest';
-
+import {defaults} from 'jest-config'
 const config: Config = {
+  
+  moduleFileExtensions: [...defaults.moduleFileExtensions, 'mts'],
+
+
   // All imported modules in your tests should be mocked automatically
   // automock: false,
 
